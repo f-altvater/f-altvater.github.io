@@ -25,7 +25,6 @@
     main{
         display: flex;
         flex-wrap: wrap;
-        overflow: scroll;
         width: 100%;
         margin-top: 90px;
         justify-content: space-evenly;
@@ -43,12 +42,7 @@ div[class$="header"]{
         font-size: 1.25rem;    
         text-decoration: underline;    
         color: rgb(51, 0, 102);        
-}        
-        
-
-div[class$=content]{        
-    overflow: scroll;        
-}                        
+}                                  
 
 
 .top-content-wrapper{
@@ -68,7 +62,6 @@ div[class$=content]{
         flex-wrap: wrap;
         justify-content: center;
         max-height: 100%;
-        overflow: scroll;
         }
         
         .critical-dog-wrapper{
