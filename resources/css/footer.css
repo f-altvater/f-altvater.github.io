@@ -1,0 +1,77 @@
+@font-face{
+    font-family: 'Ubuntu Mono';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Ubuntu_Mono/ubuntu-mono-v15-latin-regular.eot') format('embedded-opentype'),
+         url('../fonts/Ubuntu_Mono/ubuntu-mono-v15-latin-regular.ttf') format('truetype'),
+         url('../fonts/Ubuntu_Mono/ubuntu-mono-v15-latin-regular.woff') format('woff'),
+         url('../fonts/Ubuntu_Mono/ubuntu-mono-v15-latin-regular.woff2') format('woff2');
+}
+
+footer{
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top: 3px;
+    position: relative;
+    background-color: rgb(51, 0, 102);
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: scroll;
+}    
+
+
+.footer-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    }
+    
+    .footer-nav ul li{
+        display: inline;
+        list-style-type: none;
+        font-size: 1rem;
+        }
+        
+        .footer-nav ul li a{
+            text-decoration: underline dotted;
+            padding: 0 10px;
+            display: inline-block;
+            color: rgb(255, 186, 82);
+            }
+
+        .footer-nav ul li a:hover{
+            text-decoration: underline;
+}            
+
+
+.linebarrier{
+    height: 1px;
+    background: linear-gradient(to left, rgb(51, 0, 102), rgb(255, 186, 82), rgb(51, 0, 102));
+}    
+
+
+.extra-contacts{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+    }
+    
+    .extra-contacts ul li{
+        display: inline;
+        list-style-type: none;
+        font-size: 0.9rem;
+        margin: 0;
+        color: rgb(255, 186, 82);
+        }
+        
+        .extra-contacts ul li+li::before{
+            content: "|";
+            color: rgb(255, 186, 82);
+            margin: 0 1vw;
+}        
+

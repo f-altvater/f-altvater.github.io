@@ -1,0 +1,148 @@
+@font-face{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Ubuntu/ubuntu-v20-latin-regular.eot') format('embedded-opentype'),
+         url('../fonts/Ubuntu/ubuntu-v20-latin-regular.ttf') format('truetype'),
+         url('../fonts/Ubuntu/ubuntu-v20-latin-regular.woff') format('woff'),
+         url('../fonts/Ubuntu/ubuntu-v20-latin-regular.woff2') format('woff2');
+}
+
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    text-align: justify;
+}
+
+
+.main-wrapper{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    }
+    
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: scroll;
+        width: 100%;
+        margin-top: 90px;
+        justify-content: space-evenly;
+        min-height: 100vh;
+        font-family: "Ubuntu", sans-serif;
+}    
+
+
+div[class$="header"]{
+        width: 100%;
+        padding: 10px;    
+        display: flex;    
+        align-self: center;    
+        justify-content: center;    
+        font-size: 1.25rem;    
+        text-decoration: underline;    
+        color: rgb(51, 0, 102);        
+}        
+        
+
+div[class$=content]{        
+    overflow: scroll;        
+}                        
+
+
+.top-content-wrapper{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgb(255, 186, 82);
+    }
+    
+    .top-content-wrapper div[class|="container"]{
+        max-width: 700px;
+        margin: 10px;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-height: 100%;
+        overflow: scroll;
+        }
+        
+        .critical-dog-wrapper{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            align-content: center;
+            margin-bottom: 5px;
+            padding: 5px;
+            gap: 10px;
+            }
+            
+        .critical-dog-wrapper .info-wrapper{
+            display: flex;
+            width: 300px;        
+            }        
+            
+            .picture-link-wrapper{
+                display: flex;
+                justify-content: center;
+                background-image: url('../images/placeholder.jpg');
+                width: 300px;
+                height: 169px;
+                border-radius: 10px;
+                }
+
+                .picture-link-wrapper a{
+                    display: inline-block;
+                    width: 80%;
+                    height: 25px;
+                    border-radius: 10px;
+                    align-self: flex-end;
+                    margin-bottom: 5px;
+                    text-align: center;
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border: 1px solid rgb(51, 0, 102);
+                    color: rgb(255, 186, 82);
+}                
+
+
+.donations-wrapper, .faq-wrapper{
+    max-width: 700px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    max-height: 500px;
+}
+
+
+.container-donations{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    }
+
+    .donations-bank-details{
+        width: 80%;
+        align-self: center;
+        border: 1px solid rgb(51, 0, 102);
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 10px;
+        color: rgb(51, 0, 102);
+        background-color: rgb(255, 186, 82);
+        }
+
+        .donations-bank-details table{
+            width: 100%;
+            text-align: center;
+}
+
+

@@ -1,0 +1,100 @@
+@font-face{
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Ubuntu/ubuntu-v20-latin-regular.eot') format('embedded-opentype'),
+         url('../fonts/Ubuntu/ubuntu-v20-latin-regular.ttf') format('truetype'),
+         url('../fonts/Ubuntu/ubuntu-v20-latin-regular.woff') format('woff'),
+         url('../fonts/Ubuntu/ubuntu-v20-latin-regular.woff2') format('woff2');
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    width: 100%;
+    margin-top: 95px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.container-searchbar{
+    margin-left: 5%;
+    margin-top: 5px;
+    width: 50%;
+    height: 30px;
+    }
+    
+    #searchbar{
+    padding: 1px;
+    border-radius: 10px;
+    }
+    
+    input[type=text]{
+        width: 50%;
+        height: 75%;
+        border: 1px solid rgb(51, 0, 102);
+        transition: all 0.5s ease-in-out;
+        }
+
+        input[type=text]:hover{
+            width: 75%;
+            height: 80%;
+            border: 2px solid rgb(51, 0, 102);
+            }
+        
+        input[type=text]:focus{
+            width: 75%;
+            height: 100%;
+            border: 2px solid rgb(255, 186, 82);
+            color: rgb(51, 0, 102);
+            outline: none;
+            }
+            
+            input:focus::placeholder{
+            color: transparent;
+}
+
+
+.container-dogs{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+    }
+    
+    .container-dogs ul .dogs{
+        display: inline-block;
+        margin: 5px;
+        justify-content: center;
+        }
+        
+        li .dogname-wrapper{
+            display: flex;
+            justify-content: center;
+            background-image: url('../images/placeholder.jpg');
+            width: 300px;
+            height: 169px;
+            border-radius: 10px;
+            }
+        
+            .dogname-wrapper a{
+                display: inline-block;
+                width: 80%;
+                height: 25px;
+                margin-bottom: 5px;
+                align-self: flex-end;
+                text-align: center;
+                border-radius: 10px;
+                background-color: rgba(0, 0, 0, 0.5);
+                border: 1px solid rgb(51, 0, 102);
+                color: rgb(255, 186, 82);
+                text-decoration: none;
+                transition: border 0.5s ease-in-out;
+                }
+        
+                .dogname-wrapper a:hover{
+                    text-decoration: underline;
+                    font-weight: bold;
+                    border: 1px solid rgb(255, 186, 82);
+}
