@@ -13,7 +13,6 @@ footer{
     margin-top: 3px;
     position: relative;
     background-color: rgb(255, 153, 102);
-    height: 10vh;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -26,7 +25,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 5vh;
     }
     
     .footer-nav ul li{
@@ -51,7 +49,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 4vh;
     }
     
     .extra-contacts ul li{
