@@ -11,11 +11,11 @@
 main{
     display: flex;
     flex-wrap: wrap;
-    overflow: scroll;
     width: 100%;
     margin-top: 95px;
     font-family: "Ubuntu", sans-serif;
 }
+
 
 .container-searchbar{
     margin-left: 5%;
@@ -32,21 +32,20 @@ main{
     input[type=text]{
         width: 50%;
         height: 75%;
-        border: 1px solid rgb(51, 0, 102);
+        border: 1px solid rgb(255, 153, 102);
         transition: all 0.5s ease-in-out;
         }
 
         input[type=text]:hover{
             width: 75%;
             height: 80%;
-            border: 2px solid rgb(51, 0, 102);
+            border: 2px solid rgb(255, 153, 102);
             }
         
         input[type=text]:focus{
             width: 75%;
             height: 100%;
-            border: 2px solid rgb(255, 186, 82);
-            color: rgb(51, 0, 102);
+            border: 2px solid rgb(255, 153, 102);
             outline: none;
             }
             
@@ -87,14 +86,13 @@ main{
                 text-align: center;
                 border-radius: 10px;
                 background-color: rgba(0, 0, 0, 0.5);
-                border: 1px solid rgb(51, 0, 102);
-                color: rgb(255, 186, 82);
+                border: 1px solid rgb(255, 153, 102);
+                color: rgb(255, 153, 102);
                 text-decoration: none;
-                transition: border 0.5s ease-in-out;
                 }
         
                 .dogname-wrapper a:hover{
                     text-decoration: underline;
                     font-weight: bold;
-                    border: 1px solid rgb(255, 186, 82);
+                    border: 1px solid rgb(255, 153, 102);
 }
