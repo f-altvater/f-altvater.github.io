@@ -65,46 +65,93 @@ div[class$="header"]{
         flex-wrap: wrap;
         justify-content: center;
         max-height: 100%;
-        border: none;
+        }
+
+        .critical-dogs-content{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .slides-wrapper{
+            display: flex;
+            gap: 3px;
+            flex-shrink: 1;
+        }
+
+            .critical-dogs-slides-container{
+                position: relative;
+                width: 100%;
+                display: flex;
+            }
+
+                .critical-dogs-slides-container div[class="dog-slider"]{
+                    display: none;
+                }    
+        
+                .active{
+                    display: flex;
+                    width: 100%;
+                    justify-content: center;
+                    align-content: center;
+                    margin-bottom: 5px;
+                    padding: 5px;
+                    gap: 10px;
+                    border: 2px solid rgb(255, 153, 102);
+                    border-radius: 5px;
+                    flex-wrap: wrap;
+                    }
+            
+                    .active .info-wrapper{
+                        display: flex;    
+                    }            
+            
+                    .picture-link-wrapper{    
+                        display: flex;
+                        justify-content: center;
+                        background-image: url('../images/placeholder.jpg');
+                        width: 300px;
+                        height: 169px;
+                        border-radius: 10px;
+                        }    
+
+                        .picture-link-wrapper a{
+                            display: inline-block;
+                            width: 80%;
+                            height: 25px;
+                            border-radius: 10px;
+                            align-self: flex-end;
+                            margin-bottom: 5px;
+                            text-align: center;
+                            background-color: rgba(0, 0, 0, 0.5);
+                            border: 1px solid rgb(255, 153, 102);
+                            color: rgb(255, 153, 102);
         }
         
-        .critical-dog-wrapper{
-            display: flex;
+        .dot-container{
             width: 100%;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            align-content: center;
-            margin-bottom: 5px;
-            padding: 5px;
-            gap: 10px;
-            }
-            
-        .critical-dog-wrapper .info-wrapper{
             display: flex;
-            width: 300px;        
-            }        
-            
-            .picture-link-wrapper{
-                display: flex;
-                justify-content: center;
-                background-image: url('../images/placeholder.jpg');
-                width: 300px;
-                height: 169px;
+            align-items: center;
+            justify-content: center;
+        }
+            .dot-container button{
+                width: 50px;
+                height: 15px;
                 border-radius: 10px;
-                }
-
-                .picture-link-wrapper a{
-                    display: inline-block;
-                    width: 80%;
-                    height: 25px;
-                    border-radius: 10px;
-                    align-self: flex-end;
-                    margin-bottom: 5px;
-                    text-align: center;
-                    background-color: rgba(0, 0, 0, 0.5);
-                    border: 1px solid rgb(255, 153, 102);
-                    color: rgb(255, 153, 102);
-}                
+                border: 3px solid rgb(255, 153, 102);
+                background-color: transparent;
+        }
+        
+        #prev, #next{
+            height: 40px;
+            width: 40px;
+            background-color: rgb(255, 153, 102);
+            color: rgb(255, 255, 255);
+            margin: auto;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bolder;
+        }
 
 
 .donations-wrapper, .faq-wrapper{
