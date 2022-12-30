@@ -92,61 +92,82 @@
                 </div>
 
                 <div class="critical-dogs-content">
+
+                    <div class="slides-wrapper">
+
+                        <button id="prev" onclick="prev()"> &lt; </button>
+
+                        <div class="critical-dogs-slides-container">
                     
-                    <div class="critical-dog-wrapper">
+                            <div class="dog-slider active" id="indexDog1">
 
-                        <div class="picture-link-wrapper">
-                            <a href="#">
-                                Dog 1
-                            </a>
+                                <div class="picture-link-wrapper">
+                                    <a href="#">
+                                        Dog 1
+                                    </a>
+                                </div>
+
+                                <div class="info-wrapper">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                                        magna aliqua. Viverra accumsan in nisl nisi scelerisque. Purus non enim praesent elementum facilisis leo vel. 
+                                        Aliquam sem fringilla ut morbi tincidunt augue interdum. Ultricies lacus sed turpis tincidunt id. Tortor id aliquet  
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="dog-slider" id="indexDog2">
+
+                                <div class="picture-link-wrapper">
+                                    <a href="#">
+                                        Dog 2
+                                    </a>
+                                </div>
+
+                                <div class="info-wrapper">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                                        magna aliqua. Viverra accumsan in nisl nisi scelerisque. Purus non enim praesent elementum facilisis leo vel. 
+                                        Aliquam sem fringilla ut morbi tincidunt augue interdum. Ultricies lacus sed turpis tincidunt id. Tortor id aliquet 
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div class="dog-slider" id="indexDog3">
+
+                                <div class="picture-link-wrapper">
+                                    <a href="#">
+                                        Dog 3
+                                    </a>
+                                </div>
+
+                                <div class="info-wrapper">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                                        magna aliqua. Viverra accumsan in nisl nisi scelerisque. Purus non enim praesent elementum facilisis leo vel. 
+                                        Aliquam sem fringilla ut morbi tincidunt augue interdum. Ultricies lacus sed turpis tincidunt id. Tortor id aliquet 
+                                    </p>
+                                </div>
+
+                            </div>
+
                         </div>
 
-                        <div class="info-wrapper">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua. Viverra accumsan in nisl nisi scelerisque. Purus non enim praesent elementum facilisis leo vel. 
-                                Aliquam sem fringilla ut morbi tincidunt augue interdum. Ultricies lacus sed turpis tincidunt id. Tortor id aliquet  
-                            </p>
-                        </div>
+                        <button id="next" onclick="next()"> &gt; </button>
 
                     </div>
 
-                    <div class="critical-dog-wrapper">
+                    <div class="dot-container">
 
-                        <div class="picture-link-wrapper">
-                            <a href="#">
-                                Dog 2
-                            </a>
-                        </div>
-
-                        <div class="info-wrapper">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua. Viverra accumsan in nisl nisi scelerisque. Purus non enim praesent elementum facilisis leo vel. 
-                                Aliquam sem fringilla ut morbi tincidunt augue interdum. Ultricies lacus sed turpis tincidunt id. Tortor id aliquet 
-                            </p>
-                        </div>
+                        <button onclick="dot(1)"></button>
+                        <button onclick="dot(2)"></button>
+                        <button onclick="dot(3)"></button>
 
                     </div>
 
-                    <div class="critical-dog-wrapper">
-
-                        <div class="picture-link-wrapper">
-                            <a href="#">
-                                Dog 3
-                            </a>
-                        </div>
-
-                        <div class="info-wrapper">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua. Viverra accumsan in nisl nisi scelerisque. Purus non enim praesent elementum facilisis leo vel. 
-                                Aliquam sem fringilla ut morbi tincidunt augue interdum. Ultricies lacus sed turpis tincidunt id. Tortor id aliquet 
-                            </p>
-                        </div>
-
-                    </div>
-
+                    <script src="resources/scripts/indexSlider.js"></script>
                 </div>
                 
             </div>
@@ -248,8 +269,6 @@
                     </a></li>
                 </ul>
             </div>
-
-            <div class="linebarrier"></div>
 
             <div class="extra-contacts">
 
