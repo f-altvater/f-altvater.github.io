@@ -20,9 +20,8 @@ header{
     align-content: center;
     flex-wrap: wrap;
     position: fixed;
-    background-color: rgb(51, 0, 102);
-    opacity: 0.9;
-    box-shadow: 0 2px rgb(102, 102, 102);
+    background-color: rgb(255, 153, 102);
+    box-shadow: 0 2px rgb(255, 255, 255);
     top: 0;
     width: 100%;
     font-family: 'Ubuntu', sans-serif;
@@ -56,7 +55,7 @@ header{
     
         .orgname .org{
             align-self: center;
-            color: rgb(255, 186, 82);
+            color: rgb(255, 255, 255);
             font-weight: bold;
             font-size: 2rem;
             opacity: 1;
@@ -81,20 +80,20 @@ header{
         
             .navbar ul li a{
                 display: inline-block;
-                color: rgb(255, 186, 82);  
-                border-radius: 5px;
+                color: rgb(255, 255, 255);  
                 flex-shrink: 1;
                 }
                 
                 .navbar ul li a:hover{
                     text-decoration: underline;
                     font-weight: bold;
-                    background-image: linear-gradient( rgb(51, 0, 102), rgb(51, 51, 102) );
+                    border: 2px solid rgb(255, 255, 255);
                 }
                 
                 .navbar ul li a:active{
                     text-decoration: none;
-                    background-image: linear-gradient( rgb(51, 51, 102), rgb(51, 0, 102) );
+                    background-color: rgb(255, 255, 255);
+                    color: rgb(255, 153, 102);
                 }
                 
                 .navlink-wrapper{
