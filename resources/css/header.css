@@ -16,7 +16,6 @@
 header{
     display: flex;
     justify-content: space-between;
-    height: 90px;
     align-content: center;
     flex-wrap: wrap;
     position: fixed;
