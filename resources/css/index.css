@@ -53,7 +53,7 @@ div[class$="header"]{
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
     border: 5px solid rgb(255, 153, 102);
-    border-radius: 4px;
+    border-radius: 5px;
     }
     
     .top-content-wrapper div[class|="container"]{
@@ -65,6 +65,7 @@ div[class$="header"]{
         flex-wrap: wrap;
         justify-content: center;
         max-height: 100%;
+        border: none;
         }
         
         .critical-dog-wrapper{
