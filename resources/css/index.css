@@ -15,7 +15,7 @@
     text-align: justify;
 }
 
-@media (width <= 410px) {
+@media only screen and (width <= 410px) {
 
     .main-wrapper{
         display: flex;
@@ -183,7 +183,7 @@
 
 }
 
-@media (410px < width <= 520px) {
+@media only screen and (410px < width <= 520px) {
 
     .main-wrapper{
         display: flex;
@@ -350,7 +350,7 @@
     
 }
 
-@media (width > 520px) {
+@media only screen and (width > 520px) {
 
     .main-wrapper{
         display: flex;
