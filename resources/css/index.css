@@ -15,47 +15,139 @@
     text-align: justify;
 }
 
+@media screen and (width <= 410px) {
 
-.main-wrapper{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    }
-    
-    main{
+    .main-wrapper{
         display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
         width: 100%;
-        margin-top: 90px;
-        justify-content: space-evenly;
-        font-family: "Ubuntu", sans-serif;
-}    
-
-
-div[class$="header"]{
-        width: 100%;
-        padding: 10px;    
-        display: flex;    
-        align-self: center;    
-        justify-content: center;    
-        font-size: 1.25rem;    
-        text-decoration: underline;    
-        color: rgb(0, 0, 0);        
-}                          
-
-
-.top-content-wrapper{
-    margin-top: 5px;
-    display: flex;
-    width: 80%;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    background-color: rgb(255, 255, 255);
-    border: 5px solid rgb(255, 153, 102);
-    border-radius: 5px;
-    }
+        }
+        
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 90px;
+            justify-content: space-evenly;
+            font-family: "Ubuntu", sans-serif;
+    }    
     
-    .top-content-wrapper div[class|="container"]{
+    
+    div[class$="header"]{
+            width: 100%;
+            padding: 10px;    
+            display: flex;    
+            align-self: center;    
+            justify-content: center;    
+            font-size: 0.9rem;    
+            text-decoration: underline;    
+            color: rgb(0, 0, 0);        
+    }                          
+    
+    
+    .top-content-wrapper{
+        margin-top: 5px;
+        margin-bottom: 15px;
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color: rgb(255, 255, 255);
+        border: 5px solid rgb(255, 153, 102);
+        border-radius: 5px;
+        }
+        
+        .top-content-wrapper div[class|="container"]{
+            max-width: 700px;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-height: 100%;
+            }
+    
+            .critical-dogs-content{
+                display: flex;
+                flex-wrap: wrap;
+            }
+    
+            .slides-wrapper{
+                display: flex;
+                gap: 3px;
+                flex-shrink: 1;
+            }
+    
+                .critical-dogs-slides-container{
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                }
+    
+                    .critical-dogs-slides-container div[class="dog-slider"]{
+                        display: none;
+                    }    
+            
+                    .active{
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        align-content: center;
+                        margin-bottom: 5px;
+                        padding: 5px;
+                        gap: 10px;
+                        border: none;
+                        border-radius: 5px;
+                        flex-wrap: wrap;
+                        }
+                
+                        .active .info-wrapper{
+                            display: flex;    
+                        }            
+                
+                        .picture-link-wrapper{    
+                            display: flex;
+                            justify-content: center;
+                            width: 300px;
+                            height: 169px;
+                            background-image: url('../images/placeholder.jpg');
+                            border-radius: 10px;
+                            }    
+    
+                            .picture-link-wrapper a{
+                                display: inline-block;
+                                width: 80%;
+                                height: 25px;
+                                border-radius: 10px;
+                                align-self: flex-end;
+                                margin-bottom: 5px;
+                                text-align: center;
+                                background-color: rgba(0, 0, 0, 0.5);
+                                border: 1px solid rgb(255, 153, 102);
+                                color: rgb(255, 153, 102);
+            }
+            
+            .dot-container{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                .dot-container button{
+                    width: 50px;
+                    height: 15px;
+                    border-radius: 10px;
+                    border: 3px solid rgb(255, 153, 102);
+                    background-color: transparent;
+            }
+            
+            #prev, #next{
+                display: none;
+            }
+    
+    
+    .donations-wrapper, .faq-wrapper{
         max-width: 700px;
         margin: 10px;
         padding: 15px;
@@ -63,127 +155,371 @@ div[class$="header"]{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        max-height: 100%;
+        align-content: center;
+        max-height: 500px;
+    }
+    
+    
+    .container-donations{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
         }
-
-        .critical-dogs-content{
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .slides-wrapper{
-            display: flex;
-            gap: 3px;
-            flex-shrink: 1;
-        }
-
-            .critical-dogs-slides-container{
-                position: relative;
-                width: 100%;
-                display: flex;
-            }
-
-                .critical-dogs-slides-container div[class="dog-slider"]{
-                    display: none;
-                }    
-        
-                .active{
-                    display: flex;
-                    width: 100%;
-                    justify-content: center;
-                    align-content: center;
-                    margin-bottom: 5px;
-                    padding: 5px;
-                    gap: 10px;
-                    border: 2px solid rgb(255, 153, 102);
-                    border-radius: 5px;
-                    flex-wrap: wrap;
-                    }
-            
-                    .active .info-wrapper{
-                        display: flex;    
-                    }            
-            
-                    .picture-link-wrapper{    
-                        display: flex;
-                        justify-content: center;
-                        background-image: url('../images/placeholder.jpg');
-                        width: 300px;
-                        height: 169px;
-                        border-radius: 10px;
-                        }    
-
-                        .picture-link-wrapper a{
-                            display: inline-block;
-                            width: 80%;
-                            height: 25px;
-                            border-radius: 10px;
-                            align-self: flex-end;
-                            margin-bottom: 5px;
-                            text-align: center;
-                            background-color: rgba(0, 0, 0, 0.5);
-                            border: 1px solid rgb(255, 153, 102);
-                            color: rgb(255, 153, 102);
-        }
-        
-        .dot-container{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-            .dot-container button{
-                width: 50px;
-                height: 15px;
-                border-radius: 10px;
-                border: 3px solid rgb(255, 153, 102);
-                background-color: transparent;
-        }
-        
-        #prev, #next{
-            height: 40px;
-            width: 40px;
+    
+        .donations-bank-details{
+            width: 80%;
+            align-self: center;
+            border-radius: 10px;
+            padding: 5px;
+            margin-top: 10px;
             background-color: rgb(255, 153, 102);
-            color: rgb(255, 255, 255);
-            margin: auto;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
-            font-weight: bolder;
-        }
-
-
-.donations-wrapper, .faq-wrapper{
-    max-width: 700px;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    max-height: 500px;
-}
-
-
-.container-donations{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+            }
+    
+            .donations-bank-details table{
+                width: 100%;
+                text-align: center;
+                font-size: 0.75rem;
     }
 
-    .donations-bank-details{
-        width: 80%;
-        align-self: center;
-        border-radius: 10px;
-        padding: 5px;
-        margin-top: 10px;
-        background-color: rgb(255, 153, 102);
-        }
-
-        .donations-bank-details table{
-            width: 100%;
-            text-align: center;
 }
 
+@media screen and (410px < width <= 520px) {
 
+    .main-wrapper{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        }
+        
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 90px;
+            justify-content: space-evenly;
+            font-family: "Ubuntu", sans-serif;
+    }    
+    
+    
+    div[class$="header"]{
+            width: 100%;
+            padding: 10px;    
+            display: flex;    
+            align-self: center;    
+            justify-content: center;    
+            font-size: 1.15rem;    
+            text-decoration: underline;    
+            color: rgb(0, 0, 0);        
+    }                          
+    
+    
+    .top-content-wrapper{
+        margin-top: 5px;
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color: rgb(255, 255, 255);
+        border: 5px solid rgb(255, 153, 102);
+        border-radius: 5px;
+        }
+        
+        .top-content-wrapper div[class|="container"]{
+            max-width: 700px;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-height: 100%;
+            }
+    
+            .critical-dogs-content{
+                display: flex;
+                flex-wrap: wrap;
+            }
+    
+            .slides-wrapper{
+                display: flex;
+                gap: 3px;
+                flex-shrink: 1;
+            }
+    
+                .critical-dogs-slides-container{
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                }
+    
+                    .critical-dogs-slides-container div[class="dog-slider"]{
+                        display: none;
+                    }    
+            
+                    .active{
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        align-content: center;
+                        margin-bottom: 5px;
+                        padding: 5px;
+                        gap: 10px;
+                        border: 2px solid rgb(255, 153, 102);
+                        border-radius: 5px;
+                        flex-wrap: wrap;
+                        }
+                
+                        .active .info-wrapper{
+                            display: flex;    
+                        }            
+                
+                        .picture-link-wrapper{    
+                            display: flex;
+                            justify-content: center;
+                            background-image: url('../images/placeholder.jpg');
+                            width: 300px;
+                            height: 169px;
+                            border-radius: 10px;
+                            }    
+    
+                            .picture-link-wrapper a{
+                                display: inline-block;
+                                width: 80%;
+                                height: 25px;
+                                border-radius: 10px;
+                                align-self: flex-end;
+                                margin-bottom: 5px;
+                                text-align: center;
+                                background-color: rgba(0, 0, 0, 0.5);
+                                border: 1px solid rgb(255, 153, 102);
+                                color: rgb(255, 153, 102);
+            }
+            
+            .dot-container{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                .dot-container button{
+                    width: 50px;
+                    height: 15px;
+                    border-radius: 10px;
+                    border: 3px solid rgb(255, 153, 102);
+                    background-color: transparent;
+            }
+            
+            #prev, #next{
+                display: none;
+            }
+    
+    
+    .donations-wrapper, .faq-wrapper{
+        max-width: 700px;
+        margin: 10px;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        max-height: 500px;
+    }
+    
+    
+    .container-donations{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        }
+    
+        .donations-bank-details{
+            width: 80%;
+            align-self: center;
+            border-radius: 10px;
+            padding: 5px;
+            margin-top: 10px;
+            background-color: rgb(255, 153, 102);
+            }
+    
+            .donations-bank-details table{
+                width: 100%;
+                text-align: center;
+                font-size: 0.895rem;
+    }
+    
+}
+
+@media screen and (width > 520px) {
+
+    .main-wrapper{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        }
+        
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin-top: 90px;
+            justify-content: space-evenly;
+            font-family: "Ubuntu", sans-serif;
+    }    
+    
+    
+    div[class$="header"]{
+            width: 100%;
+            padding: 10px;    
+            display: flex;    
+            align-self: center;    
+            justify-content: center;    
+            font-size: 1.25rem;    
+            text-decoration: underline;    
+            color: rgb(0, 0, 0);        
+    }                          
+    
+    
+    .top-content-wrapper{
+        margin-top: 5px;
+        display: flex;
+        width: 80%;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        background-color: rgb(255, 255, 255);
+        border: 5px solid rgb(255, 153, 102);
+        border-radius: 5px;
+        }
+        
+        .top-content-wrapper div[class|="container"]{
+            max-width: 700px;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-height: 100%;
+            }
+    
+            .critical-dogs-content{
+                display: flex;
+                flex-wrap: wrap;
+            }
+    
+            .slides-wrapper{
+                display: flex;
+                gap: 3px;
+                flex-shrink: 1;
+            }
+    
+                .critical-dogs-slides-container{
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                }
+    
+                    .critical-dogs-slides-container div[class="dog-slider"]{
+                        display: none;
+                    }    
+            
+                    .active{
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                        align-content: center;
+                        margin-bottom: 5px;
+                        padding: 5px;
+                        gap: 10px;
+                        border: 2px solid rgb(255, 153, 102);
+                        border-radius: 5px;
+                        flex-wrap: wrap;
+                        }
+                
+                        .active .info-wrapper{
+                            display: flex;    
+                        }            
+                
+                        .picture-link-wrapper{    
+                            display: flex;
+                            justify-content: center;
+                            background-image: url('../images/placeholder.jpg');
+                            width: 300px;
+                            height: 169px;
+                            border-radius: 10px;
+                            }    
+    
+                            .picture-link-wrapper a{
+                                display: inline-block;
+                                width: 80%;
+                                height: 25px;
+                                border-radius: 10px;
+                                align-self: flex-end;
+                                margin-bottom: 5px;
+                                text-align: center;
+                                background-color: rgba(0, 0, 0, 0.5);
+                                border: 1px solid rgb(255, 153, 102);
+                                color: rgb(255, 153, 102);
+            }
+            
+            .dot-container{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+                .dot-container button{
+                    width: 50px;
+                    height: 15px;
+                    border-radius: 10px;
+                    border: 3px solid rgb(255, 153, 102);
+                    background-color: transparent;
+            }
+            
+            #prev, #next{
+                height: 40px;
+                width: 40px;
+                background-color: rgb(255, 153, 102);
+                color: rgb(255, 255, 255);
+                margin: auto;
+                border: none;
+                border-radius: 5px;
+                font-size: 18px;
+                font-weight: bolder;
+            }
+    
+    
+    .donations-wrapper, .faq-wrapper{
+        max-width: 700px;
+        margin: 10px;
+        padding: 15px;
+        border-radius: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        max-height: 500px;
+    }
+    
+    
+    .container-donations{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        }
+    
+        .donations-bank-details{
+            width: 80%;
+            align-self: center;
+            border-radius: 10px;
+            padding: 5px;
+            margin-top: 10px;
+            background-color: rgb(255, 153, 102);
+            }
+    
+            .donations-bank-details table{
+                width: 100%;
+                text-align: center;
+    }
+
+}
