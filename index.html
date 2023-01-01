@@ -2,13 +2,13 @@
 <html>
 
 <head>
-
-    <title>Pfötchenhilfe Belarus</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="resources/css/header.css" type="text/css" rel="stylesheet"/>   
     <link href="resources/css/index.css" type="text/css" rel="stylesheet"/>
     <link href="resources/css/footer.css" type="text/css" rel="stylesheet"/>
-    <meta charset="UTF-8" />
-
+    <title>Pfötchenhilfe Belarus</title>
 </head>
 
 <body>
@@ -28,8 +28,44 @@
                 </a>
             </div>
         </div>
+
+        <div class="hamburger-menu-wrapper">
+
+            <button class="hamburger">
+                <span class="menuIcon material-icons">menu</span>
+                <span class="closeIcon material-icons">close</span>
+            </button>
+            
+                <ul class="menu-mobile">
+                    <li class="menuItem">
+                        <a href="hunde.html">
+                            <div class="navlink-wrapper">Hunde</div>
+                        </a>
+                    </li>
+
+                    <li class="menuItem">
+                        <a href="#">
+                            <div class="navlink-wrapper">Helfen</div>
+                        </a>
+                    </li>
+
+                    <li class="menuItem">
+                        <a href="#">
+                            <div class="navlink-wrapper">Informationen</div>
+                        </a>
+                    </li>
+
+                    <li class="menuItem">
+                        <a href="#">
+                            <div class="navlink-wrapper">Kontakt</div>
+                        </a>
+                    </li>
+                </ul>
+
+            <script src="resources/scripts/menuToggling.js"></script>
+        </div>
         
-        <div class="navbar">
+        <nav class="menu-non-mobile">
             <ul>
                 <li class="link-tiere">
                     <a href="hunde.html">
@@ -55,7 +91,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </nav>
 
     </header>
 
@@ -161,7 +197,7 @@
 
                     <div class="dot-container">
 
-                        <button onclick="dot(1)"></button>
+                        <button onclick="dot(1)" style="background-color: rgb(255, 153, 102);"></button>
                         <button onclick="dot(2)"></button>
                         <button onclick="dot(3)"></button>
 
@@ -254,7 +290,7 @@
 
         <div class="wrapper-footer">
 
-            <div class="footer-nav">
+            <nav class="footer-nav">
                 <ul>
                     <li class="footer-imprint"><a href="#">
                         Impressum
@@ -268,7 +304,7 @@
                         AGB
                     </a></li>
                 </ul>
-            </div>
+            </nav>
 
             <div class="extra-contacts">
 
