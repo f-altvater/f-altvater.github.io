@@ -460,21 +460,38 @@
                                 background-color: rgba(0, 0, 0, 0.5);
                                 border: 1px solid rgb(255, 153, 102);
                                 color: rgb(255, 153, 102);
-            }
+                                }
+
+                                .picture-link-wrapper a:hover{
+                                    text-decoration: underline;
+                                    cursor: pointer;
+                                    background-color: rgba(0, 0, 0, 0.6);
+                                }
+
+                                .picture-link-wrapper a:active{
+                                    font-weight: bold;
+                                    background-color: rgba(0, 0, 0, 0.7);
+                                }
             
             .dot-container{
                 width: 100%;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-            }
+                }
+                
                 .dot-container button{
                     width: 50px;
                     height: 15px;
                     border-radius: 10px;
                     border: 3px solid rgb(255, 153, 102);
                     background-color: transparent;
-            }
+                    }
+
+                    .dot-container button:hover, .dot-container button:active{
+                        cursor: pointer;
+            }        
+
             
             #prev, #next{
                 height: 40px;
@@ -487,6 +504,18 @@
                 font-size: 18px;
                 font-weight: bolder;
             }
+
+                #prev:hover, #next:hover{
+                    color: rgb(255, 153, 102);
+                    background-color: rgb(255, 255, 255);
+                    border: 1px solid rgb(255, 153, 102);
+                    cursor: pointer;
+                }
+
+                #prev:active, #next:active{
+                    background-color: rgba(0, 0, 0, 0.1);
+                    cursor: pointer;
+                }
     
     
     .donations-wrapper, .faq-wrapper{
