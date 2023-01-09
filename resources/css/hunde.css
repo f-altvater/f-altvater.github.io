@@ -76,7 +76,7 @@ main{
         li .dogname-wrapper{
             display: flex;
             justify-content: center;
-            background-image: url('../images/placeholder.jpg');
+            background-image: url('../images/placehoder2_small.jpg');
             width: 300px;
             height: 169px;
             border-radius: 10px;
@@ -98,6 +98,11 @@ main{
         
                 .dogname-wrapper a:hover{
                     text-decoration: underline;
+                    cursor: pointer;
+                    background-color: rgba(0, 0, 0, 0.6);
+                }
+
+                .dogname-wrapper a:active{
                     font-weight: bold;
-                    border: 1px solid rgb(255, 153, 102);
-}
+                    background-color: rgba(0, 0, 0, 0.7);
+}                
