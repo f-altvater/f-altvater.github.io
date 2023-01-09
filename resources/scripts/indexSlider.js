@@ -1,8 +1,8 @@
 const dots = document.querySelectorAll(".dot-container button");
 const infos = document.querySelectorAll(".critical-dogs-slides-container .dog-slider");
 
-let i = 0 //current slide
-let j = 3 //total slides
+let i = 0; //current slide
+let j = 3; //total slides
 
 function next() {
 
