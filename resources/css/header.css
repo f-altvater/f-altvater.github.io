@@ -43,7 +43,7 @@
         }   
         
         .logo-holder .logo{
-            display: flex;
+            display: none;
             width: 90px;
             height: 90px;
             }
@@ -62,14 +62,14 @@
                 align-self: center;
                 color: rgb(255, 255, 255);
                 font-weight: bold;
-                font-size: 1rem;
+                font-size: 1.2rem;
                 opacity: 1;
     } 
     
     .hamburger-menu-wrapper{
         height: 45px;
         width: 45px;
-        margin: 5px;
+        margin: 12px;
         align-self: center;
     }
 
@@ -120,6 +120,7 @@
             display: inline-block;
             align-self: center;
             z-index: 99;
+            font-size: 0.75rem;
             }
 
             .menuItem a{
