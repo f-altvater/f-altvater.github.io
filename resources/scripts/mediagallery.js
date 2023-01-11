@@ -9,11 +9,11 @@ imgs.forEach(img => {
     fullPage.style.backgroundImage = 'url(' + img.src + ')';
     fullPage.style.display = 'block';
 
-    if(screen.width >= 1500) {
+    if(screen.width > 1024) {
         largeScreen.style.display = 'none';
     } else if(screen.width <= 600) {
         smallScreen.style.display = 'none';
-    } else if(600 < screen.width <= 1000) {
+    } else if(600 < screen.width && screen.width <= 1024) {
         mediumScreen.style.display = 'none';
     }
   });
@@ -22,11 +22,11 @@ imgs.forEach(img => {
 function restore() {
     fullPage.style = 'none';
     
-    if(screen.width >= 1500) {
+    if(screen.width > 1024) {
         largeScreen.style.display = 'flex';
     } else if(screen.width <= 600) {
         smallScreen.style.display = 'flex';
-    } else if(600 < screen.width <= 1000) {
+    } else if(600 < screen.width && screen.width <= 1024) {
         mediumScreen.style.display = 'flex';
     }
 }
